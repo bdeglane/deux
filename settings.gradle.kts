@@ -8,3 +8,10 @@
  */
 
 rootProject.name = "deux"
+
+include(
+    "domains:reservation:app",
+    "domains:reservation:model",
+    "domains:reservation:services",
+    "utils:uuid"
+)
