@@ -1,4 +1,4 @@
-package reservation.app
+package reservation.app.modules
 
 import endpoints.ReservationEndpoint
 import infrastructures.ReservationInfrastructure
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration
 import services.ReservationService
 
 @Configuration
-class AppConfig {
+class ReservationModule {
 
     @Bean
     fun reservationInfrastructure(): ReservationInfrastructure {
