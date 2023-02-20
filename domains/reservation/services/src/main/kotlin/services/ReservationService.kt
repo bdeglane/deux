@@ -8,6 +8,6 @@ class ReservationService(
     override val reservationInfrastructure: ReservationInfrastructuresInterface,
 ) : ReservationServiceInterface {
     override fun persistReservation(reservationInput: ReservationInput): Reservation {
-        return this.persistReservation(reservationInput)
+        return this.reservationInfrastructure.persistReservation(reservationInput)
     }
 }

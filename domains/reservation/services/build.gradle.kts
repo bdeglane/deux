@@ -1,6 +1,5 @@
 plugins {
     kotlin("jvm") version "1.8.10"
-    application
 }
 
 repositories {
@@ -8,6 +7,6 @@ repositories {
 }
 
 dependencies {
-    api(project(":domains:reservation:model"))
-    api(project(":utils:uuid"))
+    implementation(project(":domains:reservation:model"))
+    implementation(project(":utils:uuid"))
 }

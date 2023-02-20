@@ -1,7 +1,11 @@
 package reservation.app
 
-fun main() {
-    val name = "Ben"
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 
-    println(name)
+@SpringBootApplication
+class Application
+
+fun main(args: Array<String>) {
+    runApplication<Application>(*args)
 }

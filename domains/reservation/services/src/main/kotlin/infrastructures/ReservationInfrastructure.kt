@@ -8,6 +8,6 @@ class ReservationInfrastructure() : ReservationInfrastructuresInterface {
     override fun persistReservation(input: ReservationInput): Reservation {
         val uuid = getUUID()
 
-        return Reservation(input.dateStart, input.duration, input.pax, uuid)
+        return Reservation(uuid, input.dateStart, input.duration, input.pax)
     }
 }
