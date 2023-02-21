@@ -10,8 +10,8 @@
 rootProject.name = "deux"
 
 include(
-    "domains:reservation:app",
-    "domains:reservation:model",
-    "domains:reservation:services",
-    "utils:uuid"
+    "modules:domains:reservation:app",
+    "modules:domains:reservation:model",
+    "modules:domains:reservation:services",
+    "modules:utils:uuid"
 )
