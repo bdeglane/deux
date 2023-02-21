@@ -1,10 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "3.0.2"
-    id("io.spring.dependency-management") version "1.1.0"
     kotlin("jvm") version "1.8.10"
-    kotlin("plugin.spring") version "1.8.10"
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_18
@@ -33,20 +30,4 @@ subprojects {
     repositories {
         mavenCentral()
     }
-
-    apply {
-        plugin("io.spring.dependency-management")
-    }
-
-    // tasks.bootJar {
-    //     enabled = false
-    // }
-
-    // tasks.jar {
-    //     enabled = true
-    // }
-}
-
-tasks.bootJar {
-    enabled = false
 }
