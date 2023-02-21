@@ -6,3 +6,5 @@ plugins {
 repositories {
     mavenCentral()
 }
+
+group = "deux.utils"

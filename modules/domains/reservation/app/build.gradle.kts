@@ -7,7 +7,7 @@ plugins {
     kotlin("plugin.spring") version "1.8.10"
 }
 
-group = "reservation"
+group = "deux.domains.reservation"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_18
 
@@ -15,13 +15,14 @@ repositories {
     mavenCentral()
 }
 
+
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation(project(":modules:domains:reservation:model"))
-    implementation(project(":modules:domains:reservation:services"))
-    // implementation(project(mapOf("path" to ":domains:reservation:model")))
+    implementation(project(":model"))
+    implementation(project(":services"))
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

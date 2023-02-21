@@ -6,7 +6,9 @@ repositories {
     mavenCentral()
 }
 
+group = "deux.domains.reservation"
+
 dependencies {
-    implementation(project(":modules:domains:reservation:model"))
-    implementation(project(":modules:utils:uuid"))
+    implementation(project(":model"))
+    implementation("deux.utils:uuid")
 }
