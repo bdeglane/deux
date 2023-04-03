@@ -25,6 +25,8 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
+*.iml
+
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
@@ -214,6 +216,7 @@ dist
 .gradle
 **/build/
 !src/**/build/
+/gradle/wrapper
 
 # Ignore Gradle GUI config
 gradle-app.setting

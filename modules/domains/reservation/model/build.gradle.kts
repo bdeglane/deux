@@ -7,4 +7,4 @@ repositories {
     mavenCentral()
 }
 
-group = "deux.domains.reservation"
+group = "deux.domain.reservation"
