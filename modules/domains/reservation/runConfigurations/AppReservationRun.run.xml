@@ -3,7 +3,7 @@
     <option name="ALTERNATIVE_JRE_PATH" value="18" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <module name="domain-reservation.app.main" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="deux.domain.reservation.Application" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="deux.reservation.Application" />
     <extension name="net.ashald.envfile">
       <option name="IS_ENABLED" value="false" />
       <option name="IS_SUBST" value="false" />

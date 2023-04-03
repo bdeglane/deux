@@ -1,4 +1,4 @@
-package deux.domain.reservation
+package deux.reservation
 
 interface ReservationInputInterface {
     val dateStart: String

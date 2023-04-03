@@ -20,7 +20,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation(project(":model"))
-    implementation(project(":services"))
+    implementation(project(":domain"))
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

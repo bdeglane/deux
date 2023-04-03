@@ -3,7 +3,7 @@ rootProject.name = "domain-reservation"
 include(
     ":app",
     ":model",
-    ":services",
+    ":domain",
 )
 
 includeBuild("../../utils")

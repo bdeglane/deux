@@ -1,7 +1,7 @@
-package deux.domain.reservation.endpoints
+package deux.reservation.endpoints
 
-import deux.domain.reservation.ReservationInput
-import deux.domain.reservation.ReservationInputInterface
+import deux.reservation.ReservationInput
+import deux.reservation.ReservationInputInterface
 
 class CreateReservationBody(
     override val dateStart: String,

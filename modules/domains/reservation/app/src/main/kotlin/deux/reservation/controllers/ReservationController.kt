@@ -1,4 +1,4 @@
-package deux.domain.reservation.controllers
+package deux.reservation.controllers
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

@@ -1,4 +1,4 @@
-package deux.domain.reservation
+package deux.reservation
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
