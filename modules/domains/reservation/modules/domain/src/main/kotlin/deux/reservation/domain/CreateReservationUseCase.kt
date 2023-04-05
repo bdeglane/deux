@@ -1,4 +1,4 @@
-package deux.reservation.usecases
+package deux.reservation.domain
 
 import deux.reservation.Reservation
 import deux.reservation.ReservationInput

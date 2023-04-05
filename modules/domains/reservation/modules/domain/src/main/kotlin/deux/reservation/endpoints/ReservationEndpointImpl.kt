@@ -1,6 +1,7 @@
 package deux.reservation.endpoints
 
 import deux.reservation.Reservation
+import deux.reservation.domain.ReservationEndpoint
 import deux.reservation.usecases.CreateReservationUseCaseImpl
 import deux.reservation.usecases.GetReservationUseCaseImpl
 import org.springframework.web.bind.annotation.GetMapping

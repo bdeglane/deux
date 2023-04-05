@@ -2,7 +2,8 @@ package deux.reservation.usecases
 
 import deux.reservation.Reservation
 import deux.reservation.ReservationInput
-import deux.reservation.infrastructures.ReservationInfrastructure
+import deux.reservation.domain.CreateReservationUseCase
+import deux.reservation.domain.ReservationInfrastructure
 import org.springframework.stereotype.Service
 
 @Service

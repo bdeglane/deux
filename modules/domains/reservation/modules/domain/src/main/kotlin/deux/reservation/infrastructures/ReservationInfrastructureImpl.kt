@@ -2,6 +2,7 @@ package deux.reservation.infrastructures
 
 import deux.reservation.Reservation
 import deux.reservation.ReservationInput
+import deux.reservation.domain.ReservationInfrastructure
 import org.springframework.stereotype.Service
 import uuid.getUUID
 
