@@ -1,4 +1,4 @@
-package deux.domain.reservation.adapter
+package deux.domain.reservation.adapter.repository
 
 import deux.domain.reservation.domain.ReservationRepo
 import deux.domain.reservation.model.Reservation

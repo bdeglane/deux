@@ -1,6 +1,6 @@
 package deux.domain.reservation.domain
 
-import deux.domain.reservation.adapter.ReservationRepoInMemoryImpl
+import deux.domain.reservation.adapter.repository.ReservationRepoInMemoryImpl
 import deux.domain.reservation.model.ReservationInput
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.BeforeEach

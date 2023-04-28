@@ -2,8 +2,9 @@ package deux.domain.reservation.domain
 
 import deux.domain.reservation.model.Reservation
 import deux.domain.reservation.model.ReservationInput
+import org.springframework.stereotype.Component
 
-
+@Component
 class CreateReservationUseCaseImpl (
     private val reservationRepo: ReservationRepo
 ) : CreateReservationUseCase {
