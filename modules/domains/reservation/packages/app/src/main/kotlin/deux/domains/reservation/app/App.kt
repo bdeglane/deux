@@ -1,4 +1,4 @@
-package reservation.app
+package deux.domains.reservation.app
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan

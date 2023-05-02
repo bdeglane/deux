@@ -1,10 +1,14 @@
 plugins {
     kotlin("jvm") version "1.8.10"
-    application
+    // application
 }
 
 repositories {
     mavenCentral()
 }
 
-group = "deux.domain.reservation"
+// group = "deux.domain.reservation"
+
+tasks.jar {
+    enabled = true
+}

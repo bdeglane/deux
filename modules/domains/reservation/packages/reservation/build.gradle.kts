@@ -9,7 +9,7 @@ repositories {
     mavenCentral()
 }
 
-group = "deux.domain.reservation"
+// group = "deux.domain.reservation"
 
 
 dependencies {
@@ -27,13 +27,17 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
-tasks.test {
-    useJUnitPlatform()
-    testLogging {
-        events("passed", "skipped", "failed")
-    }
-}
+// tasks.test {
+//     useJUnitPlatform()
+//     testLogging {
+//         events("passed", "skipped", "failed")
+//     }
+// }
 
 tasks.bootJar {
     enabled = false
+}
+
+tasks.jar {
+    enabled = true
 }

@@ -12,3 +12,4 @@ dependencies {
     implementation(project(":model"))
     implementation("deux.utils:uuid")
 }
+
