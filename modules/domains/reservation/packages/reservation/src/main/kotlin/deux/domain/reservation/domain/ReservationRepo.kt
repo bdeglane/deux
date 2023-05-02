@@ -5,4 +5,5 @@ import deux.domain.reservation.model.ReservationInput
 
 interface ReservationRepo {
     fun persist(reservationInput: ReservationInput): Reservation
+    fun getByUUID(uuid: String): Reservation?
 }

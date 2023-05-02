@@ -6,10 +6,10 @@ import deux.domain.reservation.model.ReservationInput
 import uuid.getUUID
 
 class ReservationRepoInMemoryImpl : ReservationRepo {
-    private val reservations = mutableMapOf<String, Reservation>()
+    private val reservations = mutableMapOf<String, ReservationDB>()
 
     override fun persist(reservationInput: ReservationInput): Reservation {
-        val reservation = Reservation(
+        val reservation = ReservationDB(
             uuid = getUUID(),
             dateStart = reservationInput.dateStart,
             duration = reservationInput.duration,
@@ -18,6 +18,16 @@ class ReservationRepoInMemoryImpl : ReservationRepo {
 
         reservations.put(reservation.uuid, reservation)
 
-        return reservation
+        return reservation.toReservationModel()
+    }
+
+    override fun getByUUID(uuid: String): Reservation? {
+        val reservationDB = reservations.get(uuid)
+
+        if (reservationDB != null) {
+            return reservationDB.toReservationModel()
+        }
+
+        return null
     }
 }
