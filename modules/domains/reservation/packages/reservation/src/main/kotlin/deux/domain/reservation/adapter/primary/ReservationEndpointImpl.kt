@@ -1,8 +1,8 @@
-package deux.domain.reservation.adapter.endpoint
+package deux.domain.reservation.adapter.primary
 
-import deux.domain.reservation.domain.CreateReservationUseCase
-import deux.domain.reservation.domain.GetReservationUseCase
-import deux.domain.reservation.domain.ReservationEndpoint
+import deux.domain.reservation.domain.usecase.CreateReservationUseCase
+import deux.domain.reservation.domain.usecase.GetReservationUseCase
+import deux.domain.reservation.domain.primary.ReservationEndpoint
 import deux.domain.reservation.model.Reservation
 import deux.domain.reservation.model.ReservationInput
 import org.springframework.web.bind.annotation.GetMapping

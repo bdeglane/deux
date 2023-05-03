@@ -1,4 +1,4 @@
-package deux.domain.reservation.domain
+package deux.domain.reservation.domain.primary
 
 import deux.domain.reservation.model.Reservation
 import deux.domain.reservation.model.ReservationInput

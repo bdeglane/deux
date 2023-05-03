@@ -1,13 +1,10 @@
-package deux.domain.reservation.adapter.repository
+package deux.domain.reservation.adapter.secondary
 
-import deux.domain.reservation.domain.ReservationRepo
+import deux.domain.reservation.domain.secondary.ReservationRepo
 import deux.domain.reservation.model.Reservation
 import deux.domain.reservation.model.ReservationInput
-import org.springframework.stereotype.Component
 import uuid.getUUID
 
-
-@Component
 class ReservationRepoInMemoryImpl : ReservationRepo {
     private val reservations = mutableMapOf<String, ReservationDB>()
 

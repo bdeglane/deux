@@ -1,5 +1,7 @@
-package deux.domain.reservation.domain
+package deux.domain.reservation.adapter.usecase
 
+import deux.domain.reservation.domain.secondary.ReservationRepo
+import deux.domain.reservation.domain.usecase.GetReservationUseCase
 import deux.domain.reservation.model.Reservation
 import org.springframework.stereotype.Component
 

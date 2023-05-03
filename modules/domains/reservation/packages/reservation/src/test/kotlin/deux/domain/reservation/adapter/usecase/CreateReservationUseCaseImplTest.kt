@@ -1,6 +1,9 @@
-package deux.domain.reservation.domain
+package deux.domain.reservation.adapter.usecase
 
-import deux.domain.reservation.adapter.repository.ReservationRepoInMemoryImpl
+import deux.domain.reservation.adapter.secondary.ReservationRepoInMemoryImpl
+import deux.domain.reservation.adapter.usecase.CreateReservationUseCaseImpl
+import deux.domain.reservation.domain.secondary.ReservationRepo
+import deux.domain.reservation.domain.usecase.CreateReservationUseCase
 import deux.domain.reservation.model.ReservationInput
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.BeforeEach
