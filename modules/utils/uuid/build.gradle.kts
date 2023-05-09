@@ -8,8 +8,3 @@ repositories {
 }
 
 group = "deux.utils"
-
-dependencies {
-    testImplementation("junit:junit:4.13.1")
-    // testImplementation("io.kotest:kotest-assertions-core")
-}
