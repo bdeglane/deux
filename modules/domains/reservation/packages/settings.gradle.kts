@@ -1,6 +1,7 @@
 rootProject.name = "domain-reservation"
 
 include(
+    ":app",
     ":reservation",
 )
 
