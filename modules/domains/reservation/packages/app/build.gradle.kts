@@ -11,7 +11,7 @@ group = "app.reservation.deux"
 version = "0.0.1"
 
 application {
-    mainClass.set("app.reservation.deux.ApplicationKt")
+    mainClass.set("deux.reservation.app.ApplicationKt")
 
     val isDevelopment: Boolean = project.ext.has("development")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
@@ -22,10 +22,16 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":reservation"))
+
     implementation(libs.ktorServerCoreJvm)
     implementation(libs.ktorServerOpenApi)
     implementation(libs.ktorServerNettyJvm)
     implementation(libs.logbackCassic)
+
+    // implementation(libs.springContext)
+    implementation(libs.koinKtor)
+    implementation(libs.koinLoggerSlf4j)
 
     testImplementation(libs.kotlinTestJunit)
     testImplementation(libs.ktorServerTestsJvm)

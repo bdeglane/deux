@@ -4,6 +4,9 @@ junitJupiterEngineVersion = "5.9.1"
 ktor_version = "2.3.2"
 kotlin_version = "1.9.0"
 logback_version = "1.2.11"
+spring_context_version = "6.0.11"
+koinKtorVersion = "3.4.1"
+koinLoggerSlf4jVersion = "3.4.1"
 
 [libraries]
 kotlinGradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin_version" }
@@ -15,4 +18,7 @@ ktorServerOpenApi = { module = "io.ktor:ktor-server-openapi", version.ref = "kto
 ktorServerNettyJvm = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "ktor_version" }
 ktorServerTestsJvm = { module = "io.ktor:ktor-server-tests-jvm", version.ref = "ktor_version" }
 logbackCassic = { module = "ch.qos.logback:logback-classic", version.ref = "logback_version" }
+springContext = { module = "org.springframework:spring-context", version.ref = "spring_context_version" }
+koinKtor = { module = "io.insert-koin:koin-ktor", version.ref = "koinKtorVersion" }
+koinLoggerSlf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koinLoggerSlf4jVersion" }
 

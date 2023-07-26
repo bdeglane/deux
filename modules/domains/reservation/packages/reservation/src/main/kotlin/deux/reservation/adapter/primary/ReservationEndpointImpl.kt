@@ -2,11 +2,19 @@ package deux.reservation.adapter.primary
 
 import deux.reservation.domain.usecase.GetReservationUseCase
 import deux.reservation.domain.usecase.CreateReservationUseCase
-import deux.reservation.primary.ReservationEndpoint
+import deux.reservation.domain.primary.ReservationEndpoint
 import deux.reservation.model.Reservation
 import deux.reservation.model.ReservationInput
+// import io.ktor.server.routing.Route
+// import io.ktor.server.routing.get
 
 const val url = "/api/v1/reservation"
+
+// fun Route.greeting() {
+//     get("/hello/{name}") {
+//
+//     }
+// }
 
 class ReservationEndpointImpl(
     private val createReservationUseCase: CreateReservationUseCase,
@@ -14,7 +22,7 @@ class ReservationEndpointImpl(
 ) : ReservationEndpoint {
 
     // @GetMapping("/{name}")
-    fun greeting(name: String): String {
+    override fun greeting(name: String): String {
         return "Hello $name"
     }
 

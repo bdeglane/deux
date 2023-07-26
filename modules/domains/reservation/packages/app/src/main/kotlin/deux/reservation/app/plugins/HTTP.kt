@@ -1,4 +1,4 @@
-package app.reservation.deux.plugins
+package deux.reservation.app.plugins
 
 import io.ktor.server.plugins.openapi.*
 import io.ktor.server.routing.*

@@ -9,6 +9,8 @@ repositories {
 dependencies {
     implementation("deux.utils:uuid")
     implementation("deux.reservation.model:lib")
+    implementation(libs.ktorServerCoreJvm)
+    implementation(libs.koinKtor)
 
     testImplementation("deux.reservation.model:lib")
 
