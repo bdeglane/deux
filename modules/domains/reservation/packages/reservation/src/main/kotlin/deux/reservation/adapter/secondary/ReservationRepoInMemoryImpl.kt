@@ -5,7 +5,6 @@ import deux.reservation.model.Reservation
 import deux.reservation.model.ReservationInput
 import uuid.getUUID
 
-
 class ReservationRepoInMemoryImpl : ReservationRepo {
     private val reservations = mutableMapOf<String, ReservationDB>()
 

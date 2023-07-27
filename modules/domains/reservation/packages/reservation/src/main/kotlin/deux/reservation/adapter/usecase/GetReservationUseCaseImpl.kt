@@ -1,7 +1,7 @@
 package deux.reservation.adapter.usecase
 
-import deux.reservation.domain.usecase.GetReservationUseCase
 import deux.reservation.domain.secondary.ReservationRepo
+import deux.reservation.domain.usecase.GetReservationUseCase
 import deux.reservation.model.Reservation
 
 class GetReservationUseCaseImpl(

@@ -26,7 +26,11 @@ dependencies {
 
     implementation(libs.ktorServerCoreJvm)
     implementation(libs.ktorServerOpenApi)
+    implementation(libs.ktorServerRequestValidation)
+    implementation(libs.ktorServerContentNegociation)
     implementation(libs.ktorServerNettyJvm)
+    implementation(libs.ktorServerResources)
+    implementation(libs.ktorSerializationKotlinxJson)
     implementation(libs.logbackCassic)
 
     // implementation(libs.springContext)

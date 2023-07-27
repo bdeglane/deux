@@ -5,6 +5,7 @@ import deux.reservation.domain.secondary.ReservationRepo
 import deux.reservation.domain.usecase.CreateReservationUseCase
 import deux.reservation.model.ReservationInput
 import org.junit.jupiter.api.BeforeEach
+import java.time.OffsetDateTime
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
@@ -25,7 +26,7 @@ class CreateReservationUseCaseImplTest {
     @Test
     fun `GIVEN a new reservation WHEN it is created THEN a new reservation is persisted`() {
         val newReservation = ReservationInput(
-            dateStart = "donec",
+            dateStart = OffsetDateTime.now(),
             duration = 200,
             pax = 2
         )

@@ -1,29 +1,33 @@
 package deux.reservation.model
 
-interface ReservationInputInterface {
-    val dateStart: String
-    val duration: Int
-    val pax: Int
+import deux.utils.date.KOffsetDateTimeSerializer
+import kotlinx.serialization.Serializable
+import java.time.OffsetDateTime
+
+sealed class ReservationBase {
+    abstract val dateStart: OffsetDateTime
+    abstract val duration: Int
+    abstract val pax: Int
 }
 
-class ReservationInput(
-    override val dateStart: String,
+@Serializable
+data class ReservationInput(
+    @Serializable(KOffsetDateTimeSerializer::class)
+    override val dateStart: OffsetDateTime,
     override val duration: Int,
-    override val pax: Int,
-) : ReservationInputInterface
+    override val pax: Int
+) : ReservationBase()
 
-interface ReservationInterface : ReservationInputInterface {
-    val uuid: String
-}
-
+@Serializable
 data class Reservation(
-    override val uuid: String,
-    override val dateStart: String,
+    val uuid: String,
+    @Serializable(KOffsetDateTimeSerializer::class)
+    override val dateStart: OffsetDateTime,
     override val duration: Int,
     override val pax: Int,
-) : ReservationInterface {
+) : ReservationBase() {
 
     fun getEndDate(): String {
-        return this.dateStart
+        return this.dateStart.toString()
     }
 }

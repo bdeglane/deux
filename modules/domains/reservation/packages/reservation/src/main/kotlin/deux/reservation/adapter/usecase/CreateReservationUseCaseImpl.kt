@@ -5,7 +5,7 @@ import deux.reservation.domain.usecase.CreateReservationUseCase
 import deux.reservation.model.Reservation
 import deux.reservation.model.ReservationInput
 
-class CreateReservationUseCaseImpl (
+class CreateReservationUseCaseImpl(
     private val reservationRepo: ReservationRepo
 ) : CreateReservationUseCase {
     override fun execute(reservationInput: ReservationInput): Reservation {

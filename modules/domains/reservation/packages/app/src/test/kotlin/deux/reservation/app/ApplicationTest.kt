@@ -1,11 +1,11 @@
-package deux.reservation.app.deux
+package deux.reservation.app
 
+import deux.reservation.app.plugins.configureRouting
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
+import io.ktor.http.*
 import io.ktor.server.testing.*
 import kotlin.test.*
-import io.ktor.http.*
-import deux.reservation.app.plugins.configureRouting
 
 class ApplicationTest {
     @Test
