@@ -20,6 +20,9 @@ repositories {
 }
 
 dependencies {
+    implementation("deux.utils:client")
+    // implementation(libs.ktorClientCore)
+    // implementation(libs.ktorClientCio)
     // Use the Kotlin JUnit 5 integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 

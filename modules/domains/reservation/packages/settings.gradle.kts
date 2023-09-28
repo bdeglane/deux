@@ -5,6 +5,7 @@ include(
     ":reservation",
 )
 
+includeBuild("../../../build-logic")
 includeBuild("../model")
 includeBuild("../../../utils")
 

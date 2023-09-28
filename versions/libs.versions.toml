@@ -26,6 +26,8 @@ ktorServerResources = { module = "io.ktor:ktor-server-resources", version.ref = 
 ktorSerializationKotlinxJson = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor_version" }
 ktorServerNettyJvm = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "ktor_version" }
 ktorServerTestsJvm = { module = "io.ktor:ktor-server-tests-jvm", version.ref = "ktor_version" }
+ktorClientCore = { module = "io.ktor:ktor-client-core", version.ref = "ktor_version" }
+ktorClientCio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor_version" }
 logbackCassic = { module = "ch.qos.logback:logback-classic", version.ref = "logback_version" }
 springContext = { module = "org.springframework:spring-context", version.ref = "spring_context_version" }
 koinKtor = { module = "io.insert-koin:koin-ktor", version.ref = "koinKtorVersion" }

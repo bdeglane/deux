@@ -1,8 +1,13 @@
-import org.junit.Test
+import kotlin.test.Test
+import uuid.getUUID
+import kotlin.test.assertIs
 
 class Toto {
 
     @Test
-    fun `test uuid`() {
+    fun `GIVEN WHEN THEN `() {
+        val uuid = getUUID()
+
+        assertIs<String>(uuid)
     }
 }

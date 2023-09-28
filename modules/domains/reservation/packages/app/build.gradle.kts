@@ -1,14 +1,8 @@
-// val ktor_version: String by project
-// val kotlin_version: String by project
-// val logback_version: String by project
-
 plugins {
-    kotlin("jvm") version "1.9.0"
-    id("io.ktor.plugin") version "2.3.2"
+    id("deux.kotlin-server-conventions")
 }
 
 group = "app.reservation.deux"
-version = "0.0.1"
 
 application {
     mainClass.set("deux.reservation.app.ApplicationKt")
@@ -17,26 +11,6 @@ application {
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     implementation(project(":reservation"))
-
-    implementation(libs.ktorServerCoreJvm)
-    implementation(libs.ktorServerOpenApi)
-    implementation(libs.ktorServerRequestValidation)
-    implementation(libs.ktorServerContentNegociation)
-    implementation(libs.ktorServerNettyJvm)
-    implementation(libs.ktorServerResources)
-    implementation(libs.ktorSerializationKotlinxJson)
-    implementation(libs.logbackCassic)
-
-    // implementation(libs.springContext)
-    implementation(libs.koinKtor)
-    implementation(libs.koinLoggerSlf4j)
-
-    testImplementation(libs.kotlinTestJunit)
-    testImplementation(libs.ktorServerTestsJvm)
 }
