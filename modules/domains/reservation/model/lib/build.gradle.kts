@@ -6,9 +6,6 @@ plugins {
 
 group = "deux.reservation.model"
 
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     implementation("deux.utils:date")
