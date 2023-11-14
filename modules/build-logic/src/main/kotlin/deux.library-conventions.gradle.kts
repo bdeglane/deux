@@ -10,6 +10,7 @@ repositories {
 dependencies {
     testImplementation(lib("kotlinTestJunit5"))
     testImplementation(lib("junitJupiterEngine"))
+    testImplementation(lib("mockk"))
 }
 
 tasks.named<Test>("test") {

@@ -4,6 +4,8 @@ plugins {
     id("deux.kotlin-server-conventions")
 }
 
+group = "deux.reservation.app"
+
 repositories {
     mavenCentral()
 }

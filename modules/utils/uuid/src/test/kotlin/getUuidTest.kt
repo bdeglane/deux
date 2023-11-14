@@ -1,5 +1,5 @@
-import kotlin.test.Test
 import uuid.getUUID
+import kotlin.test.Test
 import kotlin.test.assertIs
 
 class Toto {

@@ -3,18 +3,21 @@
 junitJupiterEngineVersion = "5.9.1"
 ktor_version = "2.3.2"
 kotlin_version = "1.9.0"
+kotlinxSerializationJson_version = "1.6.0"
+kotlinSerialization_version = "1.9.0"
+kotlinxSerializationVersion = "1.4.1"
 logback_version = "1.2.11"
 spring_context_version = "6.0.11"
 koinKtorVersion = "3.4.1"
 koinLoggerSlf4jVersion = "3.4.1"
 kotlinxDatetimeVersion = "0.4.0"
+mockkVersion = "1.13.8"
 #jacksonModuleKotlinVersion = "2.15.+"
 #jacksonDatatypeJsrVersion = "2.15.+"
 
 [libraries]
 kotlinGradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin_version" }
 kotlinxDatetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetimeVersion" }
-kotlinSerialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin_version" }
 kotlinTestJunit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
 kotlinTestJunit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin_version" }
 junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junitJupiterEngineVersion" }
@@ -24,14 +27,20 @@ ktorServerRequestValidation = { module = "io.ktor:ktor-server-request-validation
 ktorServerContentNegociation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor_version" }
 ktorServerResources = { module = "io.ktor:ktor-server-resources", version.ref = "ktor_version" }
 ktorSerializationKotlinxJson = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor_version" }
+kotlinSerialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin_version" }
+kotlinxSerializationJson = { module = "org.jetbrains.kotlin:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson_version" }
 ktorServerNettyJvm = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "ktor_version" }
 ktorServerTestsJvm = { module = "io.ktor:ktor-server-tests-jvm", version.ref = "ktor_version" }
 ktorClientCore = { module = "io.ktor:ktor-client-core", version.ref = "ktor_version" }
 ktorClientCio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor_version" }
+ktorClientOkhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor_version" }
 logbackCassic = { module = "ch.qos.logback:logback-classic", version.ref = "logback_version" }
 springContext = { module = "org.springframework:spring-context", version.ref = "spring_context_version" }
 koinKtor = { module = "io.insert-koin:koin-ktor", version.ref = "koinKtorVersion" }
 koinLoggerSlf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koinLoggerSlf4jVersion" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockkVersion" }
+#kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+kotlinxSerializationGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin_version" }
 #jacksonModuleKotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jacksonModuleKotlinVersion" }
 #jacksonDatatypeJsr = { module = "com.fasterxml.jackson.module:jackson-datatype-jsr", version.ref = "jacksonDatatypeJsrVersion" }
 

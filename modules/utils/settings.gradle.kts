@@ -4,6 +4,7 @@ include(
     ":uuid",
     ":date",
     ":client",
+    ":env",
 )
 
 includeBuild("../build-logic")

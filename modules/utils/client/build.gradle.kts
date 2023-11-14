@@ -8,8 +8,9 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.ktorClientCore)
-    implementation(libs.ktorClientCio)
+    api(libs.ktorClientCore)
+    api(libs.ktorClientCio)
+    api(libs.ktorClientOkhttp)
 }
 
 group = "deux.utils"

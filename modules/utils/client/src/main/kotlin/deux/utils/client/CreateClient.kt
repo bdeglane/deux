@@ -2,13 +2,10 @@ package deux.utils.client
 
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.cio.CIO
-import io.ktor.client.request.get
-import io.ktor.client.request.post
-import io.ktor.client.statement.HttpResponse
 
-class CreateClient(
+class CreateHttpClient(
     val baseUrl: String,
-    ) {
+) {
     val client = HttpClient(CIO)
 
     // init {

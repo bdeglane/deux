@@ -6,7 +6,6 @@ plugins {
 
 group = "deux.reservation.model"
 
-
 repositories {
     mavenCentral()
 }

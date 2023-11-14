@@ -7,15 +7,9 @@ import deux.reservation.app.plugins.configureRequestValidation
 import deux.reservation.app.plugins.configureRouting
 import deux.reservation.app.plugins.configureServerResources
 import io.ktor.server.application.*
-import io.ktor.server.engine.*
-import io.ktor.server.netty.*
 
-fun main() {
-    // val ctx = AnnotationConfigApplicationContext("deux.reservation.*")
-
-    embeddedServer(Netty, port = 8080, host = "0.0.0.0", module = Application::module)
-        .start(wait = true)
-}
+fun main(args: Array<String>): Unit =
+    io.ktor.server.netty.EngineMain.main(args)
 
 fun Application.module() {
     configureHTTP()
