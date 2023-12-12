@@ -1,14 +1,14 @@
 openapi: "3.0.3"
 info:
-  title: "Application API"
-  description: "Application API"
+  title: "utils API"
+  description: "utils API"
   version: "1.0.0"
 servers:
-  - url: "http://0.0.0.0:8080"
+- url: "https://utils"
 paths:
   /:
     get:
-      description: "Hello World!"
+      description: ""
       responses:
         "200":
           description: "OK"
@@ -19,5 +19,87 @@ paths:
               examples:
                 Example#1:
                   value: "Hello World!"
+  /api/v1/reservation:
+    post:
+      description: ""
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              $ref: "#/components/schemas/ReservationInput"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Reservation"
+  /api/v1/reservation/{name}:
+    get:
+      description: ""
+      parameters:
+      - name: "name"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            text/plain:
+              schema:
+                type: "string"
+  /api/v1/reservation/{uuid}:
+    get:
+      description: ""
+      parameters:
+      - name: "uuid"
+        in: "path"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Object"
 components:
   schemas:
+    ReservationInput:
+      type: "object"
+      properties:
+        dateStart:
+          type: "string"
+          format: "date-time"
+        duration:
+          type: "integer"
+          format: "int32"
+        pax:
+          type: "integer"
+          format: "int32"
+      required:
+      - "dateStart"
+    Reservation:
+      type: "object"
+      properties:
+        uuid:
+          type: "string"
+        dateStart:
+          type: "string"
+          format: "date-time"
+        duration:
+          type: "integer"
+          format: "int32"
+        pax:
+          type: "integer"
+          format: "int32"
+      required:
+      - "uuid"
+      - "dateStart"
+    Object:
+      type: "object"
+      properties: {}

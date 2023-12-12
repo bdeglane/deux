@@ -5,6 +5,7 @@ include(
     ":date",
     ":client",
     ":env",
+    ":server",
 )
 
 includeBuild("../build-logic")

@@ -1,6 +1,7 @@
 package deux.reservation.app
 
 import deux.reservation.app.plugins.configureContentNegociation
+import deux.reservation.app.plugins.configureCors
 import deux.reservation.app.plugins.configureHTTP
 import deux.reservation.app.plugins.configureKoin
 import deux.reservation.app.plugins.configureRequestValidation
@@ -18,4 +19,5 @@ fun Application.module() {
     configureRequestValidation()
     configureContentNegociation()
     configureServerResources()
+    configureCors()
 }

@@ -12,6 +12,7 @@ koinKtorVersion = "3.4.1"
 koinLoggerSlf4jVersion = "3.4.1"
 kotlinxDatetimeVersion = "0.4.0"
 mockkVersion = "1.13.8"
+swaggerAnnotationsVersion = "2.1.10"
 #jacksonModuleKotlinVersion = "2.15.+"
 #jacksonDatatypeJsrVersion = "2.15.+"
 
@@ -23,9 +24,11 @@ kotlinTestJunit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.r
 junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junitJupiterEngineVersion" }
 ktorServerCoreJvm = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor_version" }
 ktorServerOpenApi = { module = "io.ktor:ktor-server-openapi", version.ref = "ktor_version" }
+ktorServerSwaggerJvm = { module = "io.ktor:ktor-server-swagger-jvm", version.ref = "ktor_version" }
 ktorServerRequestValidation = { module = "io.ktor:ktor-server-request-validation", version.ref = "ktor_version" }
 ktorServerContentNegociation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor_version" }
 ktorServerResources = { module = "io.ktor:ktor-server-resources", version.ref = "ktor_version" }
+ktorServerCors = { module = "io.ktor:ktor-server-cors", version.ref = "ktor_version" }
 ktorSerializationKotlinxJson = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor_version" }
 kotlinSerialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin_version" }
 kotlinxSerializationJson = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson_version" }
@@ -39,6 +42,7 @@ springContext = { module = "org.springframework:spring-context", version.ref = "
 koinKtor = { module = "io.insert-koin:koin-ktor", version.ref = "koinKtorVersion" }
 koinLoggerSlf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koinLoggerSlf4jVersion" }
 mockk = { module = "io.mockk:mockk", version.ref = "mockkVersion" }
+swaggerAnnotations = { module = "io.swagger.core.v3:swagger-annotations", version.ref = "swaggerAnnotationsVersion" }
 #kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
 kotlinxSerializationGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin_version" }
 #jacksonModuleKotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jacksonModuleKotlinVersion" }

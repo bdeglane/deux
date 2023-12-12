@@ -1,0 +1,16 @@
+rootProject.name = "bff"
+
+includeBuild("../../../../build-logic")
+includeBuild("../../../reservation/model")
+includeBuild("../../../reservation/sdk")
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+    versionCatalogs {
+        create("libs") {
+            from(files("../../../../../versions/libs.versions.toml"))
+        }
+    }
+}

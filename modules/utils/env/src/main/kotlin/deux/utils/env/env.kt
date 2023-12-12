@@ -3,6 +3,7 @@ package deux.utils.env
 enum class ENV_VAR(private val text: String) {
     ENV("ENV"),
     API_BFF("API_BFF"),
+    API_BFF_PORT("API_BFF_PORT"),
     API_RESERVATION("API_RESERVATION")
     ;
 

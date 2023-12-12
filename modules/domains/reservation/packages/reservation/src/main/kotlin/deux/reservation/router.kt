@@ -3,6 +3,7 @@ package deux.reservation
 import deux.reservation.domain.primary.ReservationEndpoint
 import deux.reservation.model.Reservation
 import deux.reservation.model.ReservationInput
+import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.call
 import io.ktor.server.request.receive
 import io.ktor.server.response.respond
@@ -21,7 +22,10 @@ fun Route.reservation() {
         get("/{name}") {
             val name = call.parameters["name"]
             val result = reservationEndpoint.greeting(name = name ?: "unknown")
-            call.respondText(result)
+            call.respondText(
+                status = HttpStatusCode.OK,
+                provider = { result }
+            )
         }
 
         post("/") {
